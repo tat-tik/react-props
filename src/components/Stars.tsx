@@ -12,11 +12,9 @@ function Stars({count = 0}: StarsProps ) {
 
     return (
         <ul className="card-body-stars u-clearfix">
-            <li>
-                {starsArray.map((_, index) => (
+            {starsArray.map((_, index) => (
                     <Star key={index}/>
                 ))}
-            </li>
         </ul>
     );
 }
