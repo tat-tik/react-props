@@ -11,11 +11,11 @@ function Stars({count = 0}: StarsProps ) {
     const starsArray = Array.from({length: count});
 
     return (
-        <ul className="card-body-stars u-clearfix">
+        <div className="card-body-stars u-clearfix">
             {starsArray.map((_, index) => (
                     <Star key={index}/>
                 ))}
-        </ul>
+        </div>
     );
 }
 export default Stars
